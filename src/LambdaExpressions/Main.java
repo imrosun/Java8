@@ -16,5 +16,13 @@ public class Main {
             System.out.print("The result = ");
             obj.abstract_func(5, 5);
             obj.default_Fun();
+
+            subMain1 list1 = (int a,int b, int c) -> System.out.println(a+b+c);
+            list1.abstract_fun(10,20,30);
         }
+
+    interface subMain1{
+            void abstract_fun (int a,int b,int c);
+    }
 }
+

@@ -9,7 +9,6 @@ a functional interface since it has one abstract method, run ().
 One of the most appealing features of the functional interface is
 creating objects using lambda expressions. We can create an interface using an anonymous class
  */
-
 package Functionalinterface;
 
 public class Main {
@@ -20,10 +19,8 @@ public class Main {
     public interface FunctionalInterface_one
     {
         public void firstInt_method();
-
         @Override
         public String toString(); //Overridden from Object class
-
         @Override
         public boolean equals(Object obj); //Overridden from Object class
     }
