@@ -1,4 +1,4 @@
-package Outer;
+package Demo;
 
 public class Lambda {
     interface MyInterface {
