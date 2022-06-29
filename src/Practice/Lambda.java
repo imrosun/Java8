@@ -1,4 +1,4 @@
-package Demo;
+package Practice;
 
 public class Lambda {
     interface MyInterface {

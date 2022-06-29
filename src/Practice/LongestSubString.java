@@ -1,13 +1,10 @@
-package Demo;
-
-
+package Practice;
 import java.util.HashSet;
 
 public class LongestSubString {
     public static void main(String[] args) {
-        int ans = lengthOfLongestSubstring("abcdd");
+        int ans = lengthOfLongestSubstring("abcdefggdd");
         System.out.println(ans);
-
     }
     public static int lengthOfLongestSubstring(String s) {
         int start =0;
