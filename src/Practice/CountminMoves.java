@@ -9,9 +9,7 @@ public class CountminMoves {
         Arrays.sort(nums);
         int sum = 0;
         int median = nums[nums.length/2];
-        for (int num : nums) {
-            sum = sum + Math.abs(median - num);
-        }
+        for (int num : nums) sum = sum + Math.abs(median - num);
         return sum;
     }
 }
