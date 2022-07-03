@@ -1,7 +1,7 @@
 package Practice;
 
 public class WiggleSubsequence {
-    public int wiggleMaxLength(int[] nums) {
+    public static int wiggleMaxLength(int[] nums) {
         if(nums.length<2)return 1;
 
         int count=1;
@@ -15,5 +15,10 @@ public class WiggleSubsequence {
             }
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+        int[] num = {1,17,5,10,13,15,10,5,16,8};
+        System.out.println(wiggleMaxLength(num));
     }
 }
