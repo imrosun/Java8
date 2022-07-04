@@ -1,4 +1,3 @@
 # Java8
 
-I have been posting Java8Features 
-with explaination with code in comment section.
+I post Java8Features with explaination in comment section.
