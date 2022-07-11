@@ -18,7 +18,22 @@ public class WiggleSubsequence {
     }
 
     public static void main(String[] args) {
-        int[] num = {1,17,5,10,13,15,10,5,16,8};
-        System.out.println(wiggleMaxLength(num));
+        int[] num = {1,7,4,9,2,5};
+        System.out.println(Wiggle(num));
+    }
+
+    static int Wiggle(int[] nums){
+        if(nums.length<2) return 1;
+
+        int ans = 1;
+        int prevDiff = 0;
+        for(int i=1;i<nums.length;i++){
+            int diff = nums[i] - nums[i-1];
+            if((diff > 0 && prevDiff <= 0) || (diff < 0 && prevDiff >= 0)){
+                ans++;
+                prevDiff = diff;
+            }
+        }
+        return ans;
     }
 }
