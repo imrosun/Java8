@@ -19,21 +19,20 @@ public class WiggleSubsequence {
 
     public static void main(String[] args) {
         int[] num = {1,7,4,9,2,5};
-        System.out.println(Wiggle(num));
+        System.out.println(jiggle(num));
     }
 
-    static int Wiggle(int[] nums){
-        if(nums.length<2) return 1;
-
-        int ans = 1;
+    static int jiggle(int[] nums){
+        if(nums.length < 2) return 1;
+        int sum = 1;
         int prevDiff = 0;
-        for(int i=1;i<nums.length;i++){
+        for(int i=1; i<nums.length; i++){
             int diff = nums[i] - nums[i-1];
-            if((diff > 0 && prevDiff <= 0) || (diff < 0 && prevDiff >= 0)){
-                ans++;
+            if(diff > 0 && prevDiff <= 0 || diff < 0 && prevDiff >= 0){
+                sum++;
                 prevDiff = diff;
             }
         }
-        return ans;
+        return sum;
     }
 }
