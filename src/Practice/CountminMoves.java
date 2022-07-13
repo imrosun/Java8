@@ -3,7 +3,7 @@ import java.util.*;
 public class CountminMoves {
     public static void main(String[] args) {
         int[] arr = {1,10,29,7,5};
-        System.out.println(min(arr));
+        System.out.println(minMoves(arr));
     }
     static int minMoves(int[] nums){
         Arrays.sort(nums);
